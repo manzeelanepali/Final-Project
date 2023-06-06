@@ -7,10 +7,27 @@
 
 .score{
     position: fixed;
-    padding: 20px;
-    color: red;
+    top: 40px;
+ 
+    color:white
     
 
+}
+.playerHealthIndicator{
+    height: 10px;
+    width: 100px;
+    background-color: pink;
+    margin-right: 0;
+    padding :80px;
+  
+}
+.playerHealthIndicator img{
+    height: 40px;
+    width: 40px;
+}
+.highScore{
+    position: fixed;
+    color: white;
 }
 .canvas {
     background-color: black;
@@ -62,9 +79,7 @@
     margin: 20px 0;
     color: #777;
 }
-.highScore{
-    color: white;
-}
+
 
 .result button {
    

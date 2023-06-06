@@ -2,6 +2,7 @@ const scoreEl = document.querySelectorAll(".score-num");
 const highestScore = document.querySelector(".highScore-num")
 const result = document.querySelector(".result");
 const startGameBtn = document.querySelector(".start-game-btn");
+const playerHealthIndicator = document.querySelector(".playerHealthIndicator")
 
 const canvas = document.querySelector(".canvas");
 const backgroundSound = createAudio("audio/background.mp3");
