@@ -6,7 +6,7 @@ const playerHealthIndicator = document.querySelector(".playerHealthIndicator")
 
 const canvas = document.querySelector(".canvas");
 const backgroundSound = createAudio("audio/background.mp3");
-// const chickenSound = createAudio("audio/chicken.mp3");
+const chickenSound = createAudio("audio/chicken.mp3");
 
 canvas.width = innerWidth - 40; // padding Size : 40
 canvas.height = innerHeight - 40; // padding Size : 40
@@ -32,14 +32,14 @@ class Player{
             x: 0,
             y: 0,
         }
+    }
         
       
-    }
 
 
     draw() {
         context.beginPath();
-        // help spinning our whole canvas 
+        // this helps in the spinning of the entire canvas
         context.save();
         context.globalAlpha = this.opacity;
         context.translate(this.position.x + this.width / 2, this.position.y + this.height / 2);
@@ -48,8 +48,6 @@ class Player{
         context.translate(-this.position.x - this.width / 2, -this.position.y - this.height / 2);
         
         context.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
-
-
         
         context.restore();
         context.closePath();
@@ -60,7 +58,9 @@ class Player{
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
     }
+
 }
+
 
 class Projectile{
     constructor({position , velocity}) {

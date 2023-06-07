@@ -8,26 +8,22 @@
 .score{
     position: fixed;
     top: 40px;
- 
-    color:white
+    color:white;
+    margin-left: 10px;
+}
+.instruction-container{
+    color: aliceblue;
+    top:80px;
+    position: fixed;
+    margin-left: 10px;
     
-
-}
-.playerHealthIndicator{
-    height: 10px;
-    width: 100px;
-    background-color: pink;
-    margin-right: 0;
-    padding :80px;
-  
-}
-.playerHealthIndicator img{
-    height: 40px;
-    width: 40px;
-}
+} 
+    
 .highScore{
+    top:10px;
     position: fixed;
     color: white;
+    margin-left: 10px;
 }
 .canvas {
     background-color: black;
@@ -38,7 +34,7 @@
     width: 50%;
     padding: 20px;
     border-radius: 40px;
-    background-color:greenyellow;
+    background-color:white;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -47,19 +43,14 @@
 }
 
 .start-game-button{
-    background-color: green;
     color: white;
-     width: 70%;
+    width: 90%;
     padding: 10px;
     border-radius: 30px;
-     font-size: 24px;
+    font-size: 24px;
     border: none;
 }
-
-.start-game-button:hover{
-    background-color: lawngreen;
-    color: black;
-}
+    
 
 
 .result .game-over {
@@ -67,9 +58,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
 }
-
+   
 .result h2 {
     font-size: 50px;
     font-weight: 700;
@@ -77,22 +67,28 @@
 
 .result p {
     margin: 20px 0;
-    color: #777;
+    color: blue;
 }
-
 
 .result button {
-   
-    background-color: #333;
+    background-color: green;
+    height: 40px;
+    width: 120px;
+    border: none;
     color: white;
-    
     outline: none;
     cursor: pointer;
-    transition: all 0.5s;
+    border-radius: 10PX;
+ 
 }
-
 
 .winning h2:first-of-type {
     color: #3674B3;
     margin-bottom: 30px;
 }
+    
+
+
+   
+    
+
