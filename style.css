@@ -11,14 +11,21 @@
     color:white;
     margin-left: 10px;
 }
-.instruction-container{
-    color: aliceblue;
-    top:80px;
-    position: fixed;
-    margin-left: 10px;
+.instruction{
+    color:white;
+    font-size: 32px;
+    border-radius: 30px;
+  
+    background-color:blueviolet;
+    padding: 10px;
+    margin-bottom: 20px;
+  
+    margin-left: 60px;
     
 } 
-    
+.instruction h4{
+    margin-left: 100px;
+}    
 .highScore{
     top:10px;
     position: fixed;
