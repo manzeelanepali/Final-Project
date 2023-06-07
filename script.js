@@ -19,7 +19,7 @@ class Player{
         this.rotation = 0;
         this.opacity = 1;
 
-        this.image = createImage("img/mainPlayer.gif");
+        this.image = createImage("img/mainPlayer1.png");
         // Width :  100px  , Height : 60px  
         this.width = 100;
         this.height = 60;
@@ -128,16 +128,15 @@ class InvaderProjectile{
 
     draw() {
         context.beginPath();
-        // context.fillStyle = "white";
-        // context.fillRect(this.position.x, this.position.y, this.width, this.height);
+      
         context.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
         context.closePath();
     }
 
     update() {
         this.draw();
-        // this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
+    
     }
 }
 
@@ -145,7 +144,7 @@ class InvaderProjectile{
 class Invader{
     constructor(position) {
         this.speed = speed;
-        this.image = createImage("img/hen.gif");
+        this.image = createImage("./img/hen.gif");
         // Width :  100px  , Height : 85px  
         this.width = 100;
         this.height = 85;
@@ -166,7 +165,7 @@ class Invader{
     }
 
     shoot() {
-      //  debugger;
+    
         invaderProjectiles.push(new InvaderProjectile({
             position: {
                 x: this.position.x + this.width / 2,
@@ -189,17 +188,16 @@ class Prize{
 
     draw() {
         context.beginPath();
-        // context.fillStyle = "white";
-        // context.fillRect(this.position.x, this.position.y, this.width, this.height);
         context.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
         context.closePath();
     }
-
+       
     update() {
         this.draw();
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
     }
+
 }
 
 class Grid{
