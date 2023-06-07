@@ -19,7 +19,7 @@ class Player{
         this.rotation = 0;
         this.opacity = 1;
 
-        this.image = createImage("img/Small_Plane.png");
+        this.image = createImage("img/mainPlayer.gif");
         // Width :  100px  , Height : 60px  
         this.width = 100;
         this.height = 60;
@@ -145,7 +145,7 @@ class InvaderProjectile{
 class Invader{
     constructor(position) {
         this.speed = speed;
-        this.image = createImage("img/chicken.png");
+        this.image = createImage("img/hen.gif");
         // Width :  100px  , Height : 85px  
         this.width = 100;
         this.height = 85;

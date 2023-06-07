@@ -4,17 +4,27 @@
     margin: 0;
     overflow: hidden;
 }
+.logo img{
+    height: 200px;
+    width: 200px;
+ 
+}
 
 .score{
     position: fixed;
     top: 40px;
     color:white;
     margin-left: 10px;
+    font-size: 20px;
     
+}
+.imageMainPage img{
+    height: 200px;
+    position: relative;
 }
 .instruction{
     color:white;
-    font-size: 32px;
+    font-size: 20px;
     border-radius: 30px;
   
     background-color:blueviolet;
@@ -32,10 +42,11 @@
     position: fixed;
     color: white;
     margin-left: 10px;
+    font-size: 20px;
 }
 .canvas {
     background-color: black;
-    background-image: url("./images/backgroundimage-1.jpg");
+    background-image: url("./img/backgroundimage-1.jpg");
     padding: 20px;
 }
 .result {
@@ -81,12 +92,14 @@
 .result button {
     background-color: green;
     height: 40px;
-    width: 120px;
+    width: 200px;
     border: none;
     color: white;
     outline: none;
     cursor: pointer;
-    border-radius: 10PX;
+    border-radius: 20PX;
+    margin-left: 50px;
+   
  
 }
 
